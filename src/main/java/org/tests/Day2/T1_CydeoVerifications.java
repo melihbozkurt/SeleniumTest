@@ -23,13 +23,24 @@ public class T1_CydeoVerifications {
         String actualURL= driver.getCurrentUrl();
 
         if(actualURL.contains(expectedURL)){
-            System.out.println("URL PASS");
+            System.out.println("URL Verification PASS");
         } else {
             System.out.println("URL Verification FAILED");
         }
 
         //4. Verify title:
         //Expected: Practice
+
+        String expectedTitle = "Practice";
+        String actualTitle = driver.getTitle();
+
+        if(actualTitle.contains(expectedTitle)){
+            System.out.println("Title Verification PASSED");
+        } else {
+            System.out.println("Title Verification FAILED");
+        }
+
+        driver.close();
 
 
 
