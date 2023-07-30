@@ -1,4 +1,4 @@
-package org.Day1;
+package org.tests.Day1;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
