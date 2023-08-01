@@ -19,8 +19,20 @@ public class TC2_ZeroBankHeaderVerification {
         driver.get("http://zero.webappsecurity.com/login.html");
 
         // 3. Verify header text
+        WebElement headerText = driver.findElement(By.tagName("h3"));
 
-        WebElement headerText = driver.findElement(By.(""))
+        // Expected: “Log in to ZeroBank”
+        String expectedHeaderText= "Log in to ZeroBank";
+        String actualHeaderText = headerText.getText();
+
+        if (actualHeaderText.equals(expectedHeaderText)){
+            System.out.println("Header text verification PASSED!");
+        }else{
+            System.out.println("Header text verification FAILED!!!");
+        }
+
+
+
 
 
     }
