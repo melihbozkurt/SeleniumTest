@@ -9,6 +9,9 @@ public class T3_getAttribute_cssSelector {
 
     public static void main(String[] args) {
 
+        //TC #3: NextBaseCRM, locators, getText(), getAttribute() practice
+        //1- Open a Chrome browser
+
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
 
